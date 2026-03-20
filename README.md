@@ -22,7 +22,13 @@ Building and shipping features for a retail app with **1.5M+ monthly active user
 ### 1. Navica — AI Trip Planner
 AI-powered trip planning app, shipped on all platforms.
 
-[🌐 Web](https://navica-web.vercel.app) · [▶️ Android](https://play.google.com/store/apps/details?id=com.gupta.navica) · [🍎 iOS](https://apps.apple.com/us/app/navica-ai-trip-planner/id6759998334) · [✈️ Sample Trip](https://navica-web.vercel.app/trip/685a5691-4756-4162-98e0-3fb35567290e_share)
+[🌐 Web](https://navica-web.vercel.app)
+
+[▶️ Android](https://play.google.com/store/apps/details?id=com.gupta.navica)
+
+[🍎 iOS](https://apps.apple.com/us/app/navica-ai-trip-planner/id6759998334)
+
+[✈️ Sample Trip](https://navica-web.vercel.app/trip/685a5691-4756-4162-98e0-3fb35567290e_share)
 
 ### 2. [`flutter-internals`](https://github.com/gupta29470/flutter-internals)
 Rebuilt Flutter's ListView from scratch — virtualized rendering with fixed + dynamic height.
