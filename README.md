@@ -36,13 +36,11 @@ AI-powered trip planning app, shipped on all platforms.
 [🌐 Web](https://navica-web.vercel.app) · [▶️ Android](https://play.google.com/store/apps/details?id=com.gupta.navica) · [🍎 iOS](https://apps.apple.com/us/app/navica-ai-trip-planner/id6759998334) · [✈️ Sample Trip](https://navica-web.vercel.app/trip/685a5691-4756-4162-98e0-3fb35567290e_share)
 
 <br>
-<br>
 
 ### 2. [`flutter-internals`](https://github.com/gupta29470/flutter-internals)
 
 Rebuilt Flutter's ListView from scratch — virtualized rendering with fixed + dynamic height.
 
-<br>
 <br>
 
 ### 3. [`ios-practice`](https://github.com/gupta29470/ios-practice)
@@ -50,13 +48,11 @@ Rebuilt Flutter's ListView from scratch — virtualized rendering with fixed + d
 17 iOS apps built while learning Swift & UIKit.
 
 <br>
-<br>
 
 ### 4. [`local-first-notes`](https://github.com/gupta29470/local-first-notes)
 
 Local-first notes app.
 
-<br>
 <br>
 
 ---
