@@ -47,7 +47,9 @@ Point it at any repo → understand the entire codebase in hours, not weeks.
 | 📖 Reading Order | Topological sort → optimal file reading sequence (dependencies first) |
 | 🤖 AI Chat | LangGraph agent with 7 query tools, multi-turn conversation with memory |
 | 🔎 Semantic Search | ChromaDB vector search on embedded code chunks (RAG) |
-| 🧩 MCP Server | 12 tools for VS Code Copilot / Claude Code / Cursor / Codex |
+| 🔬 Code Review | Multi-stage review: test coverage, blast radius, guidelines RAG, LLM deep scan (OWASP) |
+| 🔄 Incremental Reindex | Content hash comparison — only re-embeds changed files, skips unchanged |
+| 🧩 MCP Server | 16 tools for VS Code Copilot / Claude Code / Cursor / Codex |
 | ⚡ Parallel Embedding | Producer-consumer pipeline — CPU chunking overlaps with GPU embedding |
 | 🔄 Execution Flow | Entry points, module-to-module dependency chains with Mermaid diagrams |
 
@@ -57,13 +59,13 @@ Point it at any repo → understand the entire codebase in hours, not weeks.
 
 | Interface | What |
 |---|---|
-| **MCP Server** (FastMCP) | 12 tools — works in VS Code Copilot, Claude Code, Cursor, Codex |
-| **REST API** (FastAPI) | 11 endpoints — `/analyze`, `/chat`, `/overview`, `/blast-radius`, `/reading-order`, `/execution-flow` |
-| **Web UI** (Next.js) | Visual exploration — module browser, diagrams, blast radius viewer |
+| **MCP Server** (FastMCP) | 16 tools — works in VS Code Copilot, Claude Code, Cursor, Codex |
+| **REST API** (FastAPI) | 16 endpoints — `/analyze`, `/chat`, `/review`, `/incremental-reindex`, `/overview`, `/blast-radius`, `/reading-order`, `/execution-flow` |
+| **Web UI** (Next.js) | Visual exploration — module browser, diagrams, blast radius viewer, code review, smart reindex |
 
 <br>
 
-**12 MCP Tools:**
+**16 MCP Tools:**
 
 | Tool | What it does |
 |---|---|
@@ -78,7 +80,11 @@ Point it at any repo → understand the entire codebase in hours, not weeks.
 | `codewalk_get_blast_radius_map` | Change risk analysis for any file/module |
 | `codewalk_get_reading_order` | Dependency-sorted file reading sequence |
 | `codewalk_get_execution_flow` | Flow diagram — module-level or file-level |
-| `codewalk_refresh_analysis` | Refresh without re-embedding |
+| `codewalk_incremental_reindex` | Re-embed only changed files (hash-based skip) |
+| `codewalk_refresh_analysis` | Re-scan without re-embedding |
+| `codewalk_review_diff` | Review git diff — security, bugs, style (LLM + pre-checks) |
+| `codewalk_review_file` | Review file against codebase conventions |
+| `codewalk_load_guidelines` | Load team coding standards for reviews |
 
 <br>
 
