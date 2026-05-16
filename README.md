@@ -29,7 +29,76 @@ Building and shipping features for a retail app with **1.5M+ monthly active user
 
 <br>
 
-### 1. Navica — AI Trip Planner
+### 1. Codewalk — AI-Powered Codebase Onboarding Tool
+
+Point it at any repo → understand the entire codebase in hours, not weeks.
+
+[🔗 GitHub](https://github.com/gupta29470/codewalk)
+
+<br>
+
+**What it does:**
+
+| Feature | How it works |
+|---|---|
+| 🔍 Module Detection | Auto-groups files into packages/modules by directory structure |
+| 🕸️ Dependency Graph | Parses imports across 15+ languages via tree-sitter |
+| 💥 Blast Radius | BFS on reversed dependency graph → shows transitive impact of any change |
+| 📖 Reading Order | Topological sort → optimal file reading sequence (dependencies first) |
+| 🤖 AI Chat | LangGraph agent with 7 query tools, multi-turn conversation with memory |
+| 🔎 Semantic Search | ChromaDB vector search on embedded code chunks (RAG) |
+| 🧩 MCP Server | 12 tools for VS Code Copilot / Claude Code / Cursor / Codex |
+| ⚡ Parallel Embedding | Producer-consumer pipeline — CPU chunking overlaps with GPU embedding |
+| 🔄 Execution Flow | Entry points, module-to-module dependency chains with Mermaid diagrams |
+
+<br>
+
+**Three interfaces, one backend:**
+
+| Interface | What |
+|---|---|
+| **MCP Server** (FastMCP) | 12 tools — works in VS Code Copilot, Claude Code, Cursor, Codex |
+| **REST API** (FastAPI) | 11 endpoints — `/analyze`, `/chat`, `/overview`, `/blast-radius`, `/reading-order`, `/execution-flow` |
+| **Web UI** (Next.js) | Visual exploration — module browser, diagrams, blast radius viewer |
+
+<br>
+
+**12 MCP Tools:**
+
+| Tool | What it does |
+|---|---|
+| `codewalk_analyze_codebase` | Scan repo, detect modules + dependencies |
+| `codewalk_scan_files` | Batch file listing for smart filtering |
+| `codewalk_submit_filtered_files` | Submit relevant files for indexing |
+| `codewalk_index_filtered_files` | Embed selected files into vector store |
+| `codewalk_search_codebase` | RAG-powered semantic code search |
+| `codewalk_get_module_info` | Module details — files, functions, dependencies |
+| `codewalk_explain_function` | Line-by-line explanation + blast radius |
+| `codewalk_get_overview` | Tech stack, modules, diagram, riskiest files |
+| `codewalk_get_blast_radius_map` | Change risk analysis for any file/module |
+| `codewalk_get_reading_order` | Dependency-sorted file reading sequence |
+| `codewalk_get_execution_flow` | Flow diagram — module-level or file-level |
+| `codewalk_refresh_analysis` | Refresh without re-embedding |
+
+<br>
+
+**15+ languages supported:**
+
+Python · JavaScript · TypeScript · Java · Go · Rust · Ruby · PHP · C# · C++ · C · Kotlin · Swift · Dart · YAML
+
+<br>
+
+**Tech stack:**
+
+`Python` · `FastAPI` · `LangChain` · `LangGraph` · `ChromaDB` · `tree-sitter` · `Sentence Transformers` · `Jina Embeddings` · `Next.js` · `Tailwind` · `Mermaid.js`
+
+**LLM providers:** Ollama (local) · OpenAI · Anthropic · Gemini · Groq · OpenRouter
+
+<br>
+
+---
+
+### 2. Navica — AI Trip Planner
 
 AI-powered trip planning app, shipped on all platforms.
 
@@ -37,19 +106,19 @@ AI-powered trip planning app, shipped on all platforms.
 
 <br>
 
-### 2. [`flutter-internals`](https://github.com/gupta29470/flutter-internals)
+### 3. [`flutter-internals`](https://github.com/gupta29470/flutter-internals)
 
 Rebuilt Flutter's ListView from scratch — virtualized rendering with fixed + dynamic height.
 
 <br>
 
-### 3. [`ios-practice`](https://github.com/gupta29470/ios-practice)
+### 4. [`ios-practice`](https://github.com/gupta29470/ios-practice)
 
 17 iOS apps built while learning Swift & UIKit.
 
 <br>
 
-### 4. [`local-first-notes`](https://github.com/gupta29470/local-first-notes)
+### 5. [`local-first-notes`](https://github.com/gupta29470/local-first-notes)
 
 Local-first notes app.
 
@@ -61,4 +130,8 @@ Local-first notes app.
 
 <br>
 
-`Flutter` · `Dart` · `BLoC` · `Clean Architecture` · `Contentful` · `GraphQL` · `Swift` · `SwiftUI` · `Firebase`
+**Mobile:** `Flutter` · `Dart` · `BLoC` · `Clean Architecture` · `Swift` · `SwiftUI` · `Firebase`
+
+**AI/ML:** `Python` · `FastAPI` · `LangChain` · `LangGraph` · `ChromaDB` · `RAG` · `tree-sitter` · `MCP` · `Embeddings`
+
+**Web:** `Contentful` · `GraphQL`
