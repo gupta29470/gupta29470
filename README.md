@@ -1,143 +1,172 @@
 # Hey, I'm Aakash 👋
 
-**Flutter Engineer · 4+ years · Building apps at scale**
+**AI / GenAI and Mobile Engineer · 4+ years of mobile engineering · Building production systems**
 
-<br>
-
----
-
-## 🏢 Production Work
-
-Building and shipping features for a retail app with **1.5M+ monthly active users**.
-
-<br>
-
-| What I Built | Impact |
-|---|---|
-| Next-gen CMS-driven home screen (Contentful + GraphQL) | **56.7M+** page views *(as of March 2026)* |
-| Shoppable UGC feed (Tolstoy SDK integration) | **1.73M+** video clicks · **5.25%** buy-to-detail rate · MAU **1.2M → 1.5M** |
-
-<br>
-
-> From architecture decisions to refactoring legacy codebases — blogs and deep dives coming soon.
-
-<br>
+I’m a software engineer with 4+ years of experience shipping consumer products at scale. I’m now focused on **Applied AI / GenAI**, building systems around retrieval, fine-tuning, real-time voice, agents, and code intelligence.
 
 ---
 
-## 🚀 Projects
+## 🏢 Production Experience
 
-<br>
+Currently working as a **Mobile Engineer at Anko GCC**, building for Kmart & Target Australia.
 
-### 1. Codewalk — AI-Powered Codebase Onboarding Tool
+- Retail platform serving **3.74M active users**
+- WebView memory: **2GB → 400MB**
+- Token clearing: **2,000ms → 10ms**
+- PLP first load: **6–9s → 131ms**
+- PDP logged-in: **3,054ms → 231ms**
+- Next-Gen Home Screen: **38.9M sessions**
+- Shoppable UGC: **17M events · 923K users · 24% conversion among interactors**
+- Connectivity recovery improved by **2–7s**
+- Ran engineering/code-quality sessions for **10–12 engineers**
 
-Point it at any repo → understand the entire codebase in hours, not weeks.
-
-[🔗 GitHub](https://github.com/gupta29470/codewalk)
-
-<br>
-
-**What it does:**
-
-| Feature | How it works |
-|---|---|
-| 🔍 Module Detection | Auto-groups files into packages/modules by directory structure |
-| 🕸️ Dependency Graph | Parses imports across 15+ languages via tree-sitter |
-| 💥 Blast Radius | BFS on reversed dependency graph → shows transitive impact of any change |
-| 📖 Reading Order | Topological sort → optimal file reading sequence (dependencies first) |
-| 🤖 AI Chat | LangGraph agent with 7 query tools, multi-turn conversation with memory |
-| 🔎 Semantic Search | ChromaDB vector search on embedded code chunks (RAG) |
-| 🔬 Code Review | Multi-stage review: test coverage, blast radius, guidelines RAG, LLM deep scan (OWASP) |
-| 🔄 Incremental Reindex | Content hash comparison — only re-embeds changed files, skips unchanged |
-| 🧩 MCP Server | 16 tools for VS Code Copilot / Claude Code / Cursor / Codex |
-| ⚡ Parallel Embedding | Producer-consumer pipeline — CPU chunking overlaps with GPU embedding |
-| 🔄 Execution Flow | Entry points, module-to-module dependency chains with Mermaid diagrams |
-
-<br>
-
-**Three interfaces, one backend:**
-
-| Interface | What |
-|---|---|
-| **MCP Server** (FastMCP) | 16 tools — works in VS Code Copilot, Claude Code, Cursor, Codex |
-| **REST API** (FastAPI) | 16 endpoints — `/analyze`, `/chat`, `/review`, `/incremental-reindex`, `/overview`, `/blast-radius`, `/reading-order`, `/execution-flow` |
-| **Web UI** (Next.js) | Visual exploration — module browser, diagrams, blast radius viewer, code review, smart reindex |
-
-<br>
-
-**16 MCP Tools:**
-
-| Tool | What it does |
-|---|---|
-| `codewalk_analyze_codebase` | Scan repo, detect modules + dependencies |
-| `codewalk_scan_files` | Batch file listing for smart filtering |
-| `codewalk_submit_filtered_files` | Submit relevant files for indexing |
-| `codewalk_index_filtered_files` | Embed selected files into vector store |
-| `codewalk_search_codebase` | RAG-powered semantic code search |
-| `codewalk_get_module_info` | Module details — files, functions, dependencies |
-| `codewalk_explain_function` | Line-by-line explanation + blast radius |
-| `codewalk_get_overview` | Tech stack, modules, diagram, riskiest files |
-| `codewalk_get_blast_radius_map` | Change risk analysis for any file/module |
-| `codewalk_get_reading_order` | Dependency-sorted file reading sequence |
-| `codewalk_get_execution_flow` | Flow diagram — module-level or file-level |
-| `codewalk_incremental_reindex` | Re-embed only changed files (hash-based skip) |
-| `codewalk_refresh_analysis` | Re-scan without re-embedding |
-| `codewalk_review_diff` | Review git diff — security, bugs, style (LLM + pre-checks) |
-| `codewalk_review_file` | Review file against codebase conventions |
-| `codewalk_load_guidelines` | Load team coding standards for reviews |
-
-<br>
-
-**15+ languages supported:**
-
-Python · JavaScript · TypeScript · Java · Go · Rust · Ruby · PHP · C# · C++ · C · Kotlin · Swift · Dart · YAML
-
-<br>
-
-**Tech stack:**
-
-`Python` · `FastAPI` · `LangChain` · `LangGraph` · `ChromaDB` · `tree-sitter` · `Sentence Transformers` · `Jina Embeddings` · `Next.js` · `Tailwind` · `Mermaid.js`
-
-**LLM providers:** Ollama (local) · OpenAI · Anthropic · Gemini · Groq · OpenRouter
-
-<br>
+Earlier, I worked across startups and product teams building consumer applications, including social investing and digital dining platforms.
 
 ---
 
-### 2. Navica — AI Trip Planner
+# 🚀 AI / GenAI Projects
 
-AI-powered trip planning app, shipped on all platforms.
+## 1. VoiceFlow — Real-Time Voice AI Platform
 
-[🌐 Web](https://navica-web.vercel.app) · [▶️ Android](https://play.google.com/store/apps/details?id=com.gupta.navica) · [🍎 iOS](https://apps.apple.com/us/app/navica-ai-trip-planner/id6759998334) · [✈️ Sample Trip](https://navica-web.vercel.app/trip/685a5691-4756-4162-98e0-3fb35567290e_share)
+**Real-time AI phone-call platform with streaming STT → LLM → TTS pipelines.**
 
-<br>
+[GitHub](https://github.com/gupta29470/voice-flow) · [Demo Video](https://youtu.be/WMqto41-tRw)
 
-### 3. [`flutter-internals`](https://github.com/gupta29470/flutter-internals)
+### What I built
 
-Rebuilt Flutter's ListView from scratch — virtualized rendering with fixed + dynamic height.
+- **Cascaded streaming pipeline:** Twilio Media Streams → Deepgram STT → Grok/Kimi → Cartesia/ElevenLabs TTS
+- **Barge-in & turn-taking:** endpointing, cancellable speech tasks, and Twilio clear events
+- **Latency engineering:** sentence-level LLM → TTS streaming with per-turn avg/p95 latency tracking
+- **Real phone calls:** 8kHz μ-law audio over WebSockets
+- **Configurable workflows:** loan recovery, EMI, banking, and sales
+- **Structured captures:** promise-to-pay, lead qualification, escalation
+- **Multilingual:** English, Hindi, and Hinglish with language-aware STT/TTS
 
-<br>
-
-### 4. [`ios-practice`](https://github.com/gupta29470/ios-practice)
-
-17 iOS apps built while learning Swift & UIKit.
-
-<br>
-
-### 5. [`local-first-notes`](https://github.com/gupta29470/local-first-notes)
-
-Local-first notes app.
-
-<br>
+**Stack:** `Python` `FastAPI` `WebSockets` `Twilio` `Deepgram` `Grok` `Cartesia` `ElevenLabs` `SQLite` `Next.js`
 
 ---
 
-## 🛠 Tech
+## 2. Codewalk — AI Code Intelligence Platform
 
-<br>
+**Point it at a repository → understand the codebase, dependencies, risks, execution flows, and changes.**
 
-**Mobile:** `Flutter` · `Dart` · `BLoC` · `Clean Architecture` · `Swift` · `SwiftUI` · `Firebase`
+[GitHub](https://github.com/gupta29470/codewalk) · [Website](https://www.codewalk.xyz/) · [Demo Video](https://youtu.be/bqmJnED7GMk)
 
-**AI/ML:** `Python` · `FastAPI` · `LangChain` · `LangGraph` · `ChromaDB` · `RAG` · `tree-sitter` · `MCP` · `Embeddings`
+### What it does
 
-**Web:** `Contentful` · `GraphQL`
+- **Corrective RAG:** parent-child chunking, semantic search, symbol lookup, graph expansion, and query rewriting
+- **AI code review:** repository-aware diff review, language-specific rubrics, blast-radius analysis, and test-verified fix suggestions
+- **MCP server:** **39 tools** for VS Code Copilot, Claude Code, and Cursor
+- **Graph intelligence:** DuckDB + igraph for PageRank, blast radius, cycle detection, and dependency analysis
+- **Agentic workflows:** LangGraph chat, human-in-the-loop gates, and deep-research fan-out
+- **Code parsing:** tree-sitter across **15+ languages**
+- **Incremental reindexing:** only changed files are re-processed
+- **Multi-provider LLM layer:** **7 providers** with retry and fallback
+- **Semantic code search:** vector retrieval over repository code
+- **Execution flow:** entry points and module/file dependency chains
+
+**Stack:** `Python` `LangChain` `LangGraph` `ChromaDB` `DuckDB` `igraph` `tree-sitter` `FastAPI` `Next.js` `Docker`
+
+### Interfaces
+
+| Interface | Description |
+|---|---|
+| **MCP Server** | 39 tools for AI coding agents |
+| **REST API** | Repository analysis, chat, review, indexing, graph intelligence |
+| **Web UI** | Visual repository exploration, diagrams, blast radius, reviews |
+
+---
+
+## 3. EcomBot — Fine-Tuned AI Customer Support Assistant
+
+**Fine-tuned small language model + deterministic business logic for customer support.**
+
+[GitHub](https://github.com/gupta29470)
+
+### What I built
+
+- Fine-tuned **Qwen 2.5 0.5B Instruct** with **LoRA**
+- Used **PEFT + TRL**
+- Trained on **385 customer-support conversations**
+- Covered orders, returns, and refunds
+- **Hybrid inference:** LLM extracts structured intent while Python performs catalog/order lookups
+- Keeps business-critical responses grounded in actual application data
+
+**Stack:** `Python` `FastAPI` `PyTorch` `Transformers` `PEFT` `TRL` `Qwen 2.5`
+
+---
+
+# 📱 Other Projects
+
+### Navica — AI Trip Planner
+
+AI-powered trip planning application shipped across web, Android, and iOS.
+
+[Web](https://navica-web.vercel.app) · [Android](https://play.google.com/store/apps/details?id=com.gupta.navica) · [iOS](https://apps.apple.com/us/app/navica-ai-trip-planner/id6759998334) · [Sample Trip](https://navica-web.vercel.app/trip/685a5691-4756-4162-98e0-3fb35567290e_share)
+
+### flutter-internals
+
+Rebuilt Flutter's `ListView` from scratch with virtualized rendering supporting fixed and dynamic heights.
+
+[GitHub](https://github.com/gupta29470/flutter-internals)
+
+### ios-practice
+
+17 iOS applications built while learning Swift and UIKit.
+
+[GitHub](https://github.com/gupta29470/ios-practice)
+
+### local-first-notes
+
+A local-first notes application.
+
+[GitHub](https://github.com/gupta29470/local-first-notes)
+
+---
+
+# 🧠 AI / Engineering Focus
+
+### AI / GenAI
+`RAG` · `LangChain` · `LangGraph` · `MCP` · `Embeddings` · `ChromaDB` · `PEFT / LoRA` · `TRL` · `PyTorch` · `Prompt Engineering` · `Function Calling` · `Real-time Voice` · `LLM Evaluation` · `Langfuse`
+
+### Backend
+`Python` · `FastAPI` · `WebSockets` · `REST` · `Docker` · `PostgreSQL` · `DuckDB` · `SQLite` · `CI/CD`
+
+### Mobile
+`Flutter` · `Dart` · `BLoC` · `SwiftUI` · `Firebase` · `Platform Channels`
+
+### Languages
+`Python` · `Dart` · `Swift`
+
+---
+
+# 📊 Production Engineering
+
+I care about measurable engineering outcomes, not just shipping features.
+
+| Area | Result |
+|---|---|
+| WebView memory | **2GB → 400MB** |
+| Token clearing | **2,000ms → 10ms** |
+| PLP first load | **6–9s → 131ms** |
+| PDP logged-in | **3,054ms → 231ms** |
+| Home Screen | **38.9M sessions** |
+| Shoppable UGC | **17M events · 923K users** |
+| Connectivity recovery | **2–7s faster** |
+| Engineering enablement | **10–12 engineers** |
+
+---
+
+# 🔗 Connect
+
+- **GitHub:** https://github.com/gupta29470
+- **LinkedIn:** https://www.linkedin.com/in/aakash98gupta/
+- **Email:** aa.1998.gupta@gmail.com
+
+---
+
+## 🎯 Currently
+
+Building production-grade **Applied AI / GenAI systems** and looking for opportunities where I can combine my software engineering background with AI systems engineering.
+
+**Interested in:** RAG · Agents · LLM applications · Voice AI · AI infrastructure · Model fine-tuning · Developer tools
