@@ -4,6 +4,12 @@
 
 I’m a software engineer with 4+ years of experience shipping consumer products at scale. I’m now focused on **Applied AI / GenAI**, building systems around retrieval, fine-tuning, real-time voice, agents, and code intelligence.
 
+### Navica - AI Trip Planner
+
+AI-powered trip planning application shipped across web, Android, and iOS.
+
+[Web](https://navica-web.vercel.app) · [Android](https://play.google.com/store/apps/details?id=com.gupta.navica) · [iOS](https://apps.apple.com/us/app/navica-ai-trip-planner/id6759998334) · [Sample Trip](https://navica-web.vercel.app/trip/685a5691-4756-4162-98e0-3fb35567290e_share)
+
 ---
 
 ## 🏢 Production Experience
